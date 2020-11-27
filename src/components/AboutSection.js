@@ -9,15 +9,15 @@ const AboutSection = () => {
         <StyledAbout>
             <StyledDescription>
                 <div className="title">
-                    <div className="hide">
+                    <Hide>
                         <h2>We work to make</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>your <span>dreams</span> come</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>true.</h2>
-                    </div>
+                    </Hide>
                 </div>
                 <p>Contact us for any coding projects you may have.</p>
                 <button>Contact Us</button>
@@ -54,6 +54,10 @@ const StyledImage = styled.div`
         height: 80vh;
         object-fit: cover;
     }
+`
+
+const Hide = styled.div`
+    overflow: hidden;
 `
 
 
