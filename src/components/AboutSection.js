@@ -1,4 +1,5 @@
 import React from 'react';
+import home1 from '../img-samples/home1.png'
 
 const AboutSection = () => {
     return(
@@ -18,6 +19,11 @@ const AboutSection = () => {
                 <p>Contact us for any coding projects you may have.</p>
                 <button>Contact Us</button>
             </div>
+            <div className="image">
+                <img src={home1} alt="random dude pic"/>
+            </div>
         </div>
     )
 }
+
+export default AboutSection;
