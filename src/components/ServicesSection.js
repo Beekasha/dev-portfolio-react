@@ -69,7 +69,8 @@ const Cards = styled.div`
 `
 
 const Card = styled.div`
-    flex-basis: 20rem;
+    //more suited for smaller screens - 13in.
+    flex-basis: 15rem;
     .icon{
         display: flex;
         align-items: center;
