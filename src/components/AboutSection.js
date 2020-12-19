@@ -5,14 +5,22 @@ import {StyledAbout, StyledDescription, StyledImage, Hide} from '../styles'
 import { motion } from 'framer-motion'
 
 const AboutSection = () => {
+
+    const titleAnim = {
+        hidden: {opacity: 0},
+        show: {opacity: 1, transition: {duration: 2 }}
+    }
+
     return(
         <StyledAbout>
             <StyledDescription>
                 <div className="title">
                     <Hide>
                         <motion.h2 
-                            animate={{ opacity: 1, transition:{ duration: 2 } }} 
-                            initial={{ opacity: 0 }}>We work to make</motion.h2>
+                            variants={titleAnim} initial="hidden" animate="show"
+                            >
+                            We work to make
+                        </motion.h2>
                     </Hide>
                     <Hide>
                         <h2>your <span>dreams</span> come</h2>
